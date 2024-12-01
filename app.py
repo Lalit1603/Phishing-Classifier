@@ -1,0 +1,1 @@
+# once we run app.py the entire code will be run , this entire pipeline should run 
