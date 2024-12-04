@@ -1,4 +1,4 @@
-{	"SampleFileName": "pishing_08012020_120000.csv", "might be error file name was not correct json file"
+{	"SampleFileName": "pishing_08012020_120000.csv", 
 	"LengthOfDateStampInFile": 8,
 	"LengthOfTimeStampInFile": 6,
 	"NumberofColumns" : 31,
