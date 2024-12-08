@@ -5,9 +5,10 @@ import certifi
 import pymongo
 
 from src.constant import *
-from src.exception import CustomException 
+from src.exception import CustomException
 
-ca= certifi.where()
+ca = certifi.where()
+
 
 class MongoDBClient:
     client = None

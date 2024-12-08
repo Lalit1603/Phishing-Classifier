@@ -41,7 +41,6 @@ class MainUtils:
         logging.info("Entered the save_object method of MainUtils class")
 
         try:
-            #writing trained model in binary and dumping in pickle form
             with open(file_path, "wb") as file_obj:
                 pickle.dump(obj, file_obj)
 

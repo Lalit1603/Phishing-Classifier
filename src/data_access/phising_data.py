@@ -1,14 +1,15 @@
 import sys
 from typing import Optional, List
 
-from database_connect import mongo_operations as mongo
+from database_connect import mongo_operation as mongo
 from pymongo import MongoClient
 import numpy as np
 import pandas as pd
-from scr.constant import *
-from scr.configuration.mongo_db_connection import MongoDBClient
+from src.constant import *
+from src.configuration.mongo_db_connection import MongoDBClient
 from src.exception import CustomException
 import os
+
 
 class PhisingData:
     """
@@ -53,7 +54,7 @@ class PhisingData:
         try:
             """
             export entire collectin as dataframe:
-            return df.DataFrame of collection
+            return dd.DataFrame of collection
             """
 
             collections = self.get_collection_names()
@@ -66,4 +67,3 @@ class PhisingData:
 
         except Exception as e:
             raise CustomException(e, sys)
-    
