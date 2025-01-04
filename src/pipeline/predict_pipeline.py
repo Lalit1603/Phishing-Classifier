@@ -54,6 +54,7 @@ class PredictionPipeline:
 
 
             return pred_file_path
+        
         except Exception as e:
             raise CustomException(e,sys)
 
@@ -70,7 +71,7 @@ class PredictionPipeline:
                 preds = model.predict(features)
 
                 return preds
-
+            
             except Exception as e:
                 raise CustomException(e, sys)
         
@@ -100,7 +101,7 @@ class PredictionPipeline:
             input_dataframe[prediction_column_name] = input_dataframe[prediction_column_name].map(target_column_mapping)
             
             os.makedirs( self.prediction_file_detail.prediction_output_dirname, exist_ok= True)
-            input_dataframe.to_csv(self.prediction_file_detail.prediction_file_path, index= False)
+            input_dataframe.to_csv(self.prediction_file_detail.prediction_file_path, index= True)
             logging.info("predictions completed. ")
 
 
@@ -121,6 +122,14 @@ class PredictionPipeline:
         except Exception as e:
             raise CustomException(e,sys)
             
+        
+
+ 
+        
+
+        
+            
+
         
 
  
